@@ -48,8 +48,7 @@
       </plugin>
       <plugin>
         <groupId>org.jacoco</groupId>
-            <id>report</id>
-            <phase>prepare-package</phase>
+         <phase>prepare-package</phase>
             <goals>
               <goal>report</goal>
             </goals>
