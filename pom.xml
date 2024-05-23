@@ -33,7 +33,7 @@
             <id>verify</id>
             <goals>
               <goal>verify</goal>
-               </goals>
+            </goals>
           </execution>
         </executions>
       </plugin>
@@ -48,7 +48,17 @@
       </plugin>
       <plugin>
         <groupId>org.jacoco</groupId>
-         <phase>prepare-package</phase>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.7.9</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>prepare-package</phase>
             <goals>
               <goal>report</goal>
             </goals>
