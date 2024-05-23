@@ -33,10 +33,10 @@
             <id>verify</id>
             <goals>
               <goal>verify</goal>
-            </goals>
+               </goals>
           </execution>
         </executions>
-       </plugin>
+      </plugin>
        <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -45,9 +45,9 @@
           <reuseForks>true</reuseForks>
           <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
         </configuration>
-            </goals>
-          </execution>
-          <execution>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
             <id>report</id>
             <phase>prepare-package</phase>
             <goals>
